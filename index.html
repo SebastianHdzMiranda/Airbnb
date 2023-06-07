@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirBNB - BEM</title>
+    <link rel="stylesheet" href="build/css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300,400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="header__topbar">
+
+                <h1 class="header__logo">Viaje</h1>
+                
+                <div class="header__nav">
+                    
+                    <a class="header__link href="#">Lugares para hospedarte</a>
+                    <a class="header__link href="#">Experiencias</a>
+                    <a class="header__link href="#">Experiencias en línea</a>
+                    
+                </div>
+
+                <a class="header__lastLink" href="#">Hazte Anfitrión</a>
+                
+            </div>
+    
+            <div class="header__contenido">
+                <div class="formContainer">
+                    <form class="form" action="#">
+                        
+                        <div class="form__seccciones">
+    
+                            <div class="form__seccion">
+                                <label class="form__label" for="ubicacion">Ubicación</label>
+                                <input class="form__input" id="ubicacion" type="text" placeholder="¿A donde viajas">
+                            </div><!-- formSeccion -->
+    
+                            <div class="form__seccion">
+                                <label class="form__label" for="llegada">Llegada</label>
+                                <input class="form__input" id="llegada" type="date">
+                            </div><!-- formSeccion -->
+                            
+                            <div class="form__seccion">
+                                <label class="form__label" for="salida">Salida</label>
+                                <input class="form__input" id="salida" type="date">
+                            </div><!-- formSeccion -->
+                            
+                            <div class="form__seccion">
+                                <label class="form__label" for="huespedes">Huéspedes</label>
+                                <input class="form__input" id="huespedes" type="number" placeholder="¿Cuantos?">
+                            </div><!-- formSeccion -->
+    
+                        </div><!-- formSecciones -->
+    
+                        <div class="form__btnContainer">
+                            <input class="form__btn" type="submit" value="Buscar">
+                        </div>
+                    </form>
+                </div>
+    
+                <p class="header__headline">¿No sabes a donde ir?</p>            
+                
+                <a class="header__btn" href="#">Búsqueda Flexible</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="destinos contenedor seccion">
+        <h2 class="destinos__heading">Descubre alojamientos populares</h2>
+
+        <div class="destinos__grid">
+
+            <div class="destino">
+                <div class="destino__imgContainer">
+
+                    <picture>
+                        <source srcset="build/img/icono_destino_1.avif" type="image/avif">
+                        <source srcset="build/img/icono_destino_1.webp" type="image/webp">
+                        <source srcset="build/img/icono_destino_1.png" type="image/jpg">
+                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_1.png" width="500" height="300" alt="sitio">
+                    </picture>
+
+                </div>
+                <div class="destino__info">
+                    <h3 class="destino__pais">New York</h3>
+                    <p class="destino__description">
+                        4 horas en avión
+                    </p>
+                </div>
+            </div><!-- sitio -->
+
+            <div class="destino">
+                <div class="destino__imgContainer">
+
+                    <picture>
+                        <source srcset="build/img/icono_destino_2.avif" type="image/avif">
+                        <source srcset="build/img/icono_destino_2.webp" type="image/webp">
+                        <source srcset="build/img/icono_destino_2.png" type="image/jpg">
+                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_2.png" width="500" height="300" alt="sitio">
+                    </picture>
+
+                </div>
+                <div class="destino__info">
+                    <h3 class="destino__pais">Paris</h3>
+                    <p class="destino__description">
+                        4 horas en avión
+                    </p>
+                </div>
+            </div><!-- sitio -->
+
+            <div class="destino">
+                <div class="destino__imgContainer">
+
+                    <picture>
+                        <source srcset="build/img/icono_destino_3.avif" type="image/avif">
+                        <source srcset="build/img/icono_destino_3.webp" type="image/webp">
+                        <source srcset="build/img/icono_destino_3.png" type="image/jpg">
+                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_3.png" width="500" height="300" alt="sitio">
+                    </picture>
+
+                </div>
+                <div class="destino__info">
+                    <h3 class="destino__pais">San Francisco</h3>
+                    <p class="destino__description">
+                        4 horas en avión
+                    </p>
+                </div>
+            </div><!-- sitio -->
+
+            <div class="destino">
+                <div class="destino__imgContainer">
+
+                    <picture>
+                        <source srcset="build/img/icono_destino_4.avif" type="image/avif">
+                        <source srcset="build/img/icono_destino_4.webp" type="image/webp">
+                        <source srcset="build/img/icono_destino_4.png" type="image/jpg">
+                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_4.png" width="500" height="300" alt="sitio">
+                    </picture>
+
+                </div>
+                <div class="destino__info">
+                    <h3 class="destino__pais">Egipto</h3>
+                    <p class="destino__description">
+                        4 horas en avión
+                    </p>
+                </div>
+            </div><!-- sitio -->
+
+            <div class="destino">
+                <div class="destino__imgContainer">
+
+                    <picture>
+                        <source srcset="build/img/icono_destino_5.avif" type="image/avif">
+                        <source srcset="build/img/icono_destino_5.webp" type="image/webp">
+                        <source srcset="build/img/icono_destino_5.png" type="image/jpg">
+                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_5.png" width="500" height="300" alt="sitio">
+                    </picture>
+
+                </div>
+                <div class="destino__info">
+                    <h3 class="destino__pais">Londres</h3>
+                    <p class="destino__description">
+                        4 horas en avión
+                    </p>
+                </div>
+            </div><!-- sitio -->
+
+            <div class="destino">
+                <div class="destino__imgContainer">
+
+                    <picture>
+                        <source srcset="build/img/icono_destino_6.avif" type="image/avif">
+                        <source srcset="build/img/icono_destino_6.webp" type="image/webp">
+                        <source srcset="build/img/icono_destino_6.png" type="image/jpg">
+                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_6.png" width="500" height="300" alt="sitio">
+                    </picture>
+
+                </div>
+                <div class="destino__info">
+                    <h3 class="destino__pais">Italia</h3>
+                    <p class="destino__description">
+                        4 horas en avión
+                    </p>
+                </div>
+            </div><!-- sitio -->
+
+            <div class="destino">
+                <div class="destino__imgContainer">
+
+                    <picture>
+                        <source srcset="build/img/icono_destino_7.avif" type="image/avif">
+                        <source srcset="build/img/icono_destino_7.webp" type="image/webp">
+                        <source srcset="build/img/icono_destino_7.png" type="image/jpg">
+                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_7.png" width="500" height="300" alt="sitio">
+                    </picture>
+
+                </div>
+                <div class="destino__info">
+                    <h3 class="destino__pais">India</h3>
+                    <p class="destino__description">
+                        4 horas en avión
+                    </p>
+                </div>
+            </div><!-- sitio -->
+
+            <div class="destino">
+                <div class="destino__imgContainer">
+                    
+                    <picture>
+                        <source srcset="build/img/icono_destino_8.avif" type="image/avif">
+                        <source srcset="build/img/icono_destino_8.webp" type="image/webp">
+                        <source srcset="build/img/icono_destino_8.png" type="image/jpg">
+                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_8.png" width="500" height="300" alt="sitio">
+                    </picture>
+
+                </div>
+                <div class="destino__info">
+                    <h3 class="destino__pais">Grecia</h3>
+                    <p class="destino__description">
+                        4 horas en avión
+                    </p>
+                </div>
+            </div><!-- sitio -->
+        </div>
+    </div>
+</body>
+</html>

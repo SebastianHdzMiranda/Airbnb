@@ -1,0 +1,122 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+
+/* Header
+------------------------------------------------------------ */
+.header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.452) 0%, rgba(0, 0, 0, 0.300) 100%), url(../img/header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: v.$blanco;
+    padding: 2rem 0 10rem 0;
+    @include m.tablet{ 
+        padding: 2rem 0 20rem 0;
+    }
+    &__topbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__nav{
+        display: none;
+        gap: 4rem;
+        @include m.tablet{ 
+            display: flex;
+        }
+    }
+    &__lastLink{
+        color: v.$blanco;
+        text-decoration: underline;
+    }
+    &__contenido{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+    &__headline{
+        color: v.$blanco;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    &__btn{
+        @include m.boton(v.$blanco, v.$primario);
+    }
+}
+.formContainer{
+    width: 100%;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    @include m.tablet{ 
+        padding-top: 8rem;
+        padding-bottom: 11rem;
+    }   
+    @include m.desktop{ 
+        padding-top: 4rem;
+        padding-bottom: 22rem;
+        width: 80%;
+    }   
+}
+.form{
+    background-color: v.$blanco;
+    border-radius: 5rem;
+    padding: 4rem 2rem;
+    @include m.tablet{ 
+        display: flex;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+    &__seccciones{
+        @include m.tablet{ 
+            display: flex;
+            justify-content: space-around;
+            width: 85%;
+            align-items: center;
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+    }
+    &__seccion{
+        border-radius: 2rem;
+        margin-bottom: 2rem;
+        @include m.tablet{ 
+            flex: 1;
+            margin-bottom: 0;
+        }
+    }
+    &__label{
+        color: v.$negro;
+        display: block;
+        font-weight: 900;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        @include m.tablet{ 
+            margin-bottom: 0; 
+        }
+    }
+    &__input{
+        width: 100%;
+        border: none;
+        color: v.$gris;
+        padding: .5rem 0;
+    }
+    &__btnContainer{
+        @include m.tablet{ 
+            width: 15%;
+        }
+    }
+    &__btn{
+        @include m.boton(v.$secundario, v.$blanco);
+        border: none;
+        width: 100%;
+        padding: 1.5rem 0;
+        font-size: 1.2rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        @include m.tablet{ 
+            margin: 0;
+        }
+    }
+
+}

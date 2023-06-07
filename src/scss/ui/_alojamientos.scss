@@ -1,0 +1,60 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+
+/* Header
+------------------------------------------------------------ */
+.destinos{
+    &__heading{
+        padding: 2rem 0;
+        font-size: 2.8rem;
+        @include m.telefono{ 
+            font-size: 3.2rem;
+        }
+    }
+    &__grid{
+        @include m.grid(2, 2rem);
+        align-items: center;
+        // @include m.tablet{ 
+        // }
+        @include m.desktop{ 
+            @include m.grid(4, 3rem);
+            align-items: center;
+        }
+    }
+}
+.destino{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    @include m.tablet{ 
+        flex-direction: row;
+    }
+    &__imgContainer{
+        max-width: 12rem;
+    }
+    // &__img{
+
+    // }
+    // &__info{
+
+    // }
+    &__pais{
+        text-align: center;
+        font-size: 2.2rem;
+        @include m.tablet{ 
+            text-align: left;
+        }
+    }
+    &__description{
+        margin: 0;
+        margin-top: .5rem;
+        text-align: center;
+        @include m.desktop{ 
+            text-align: left;
+        }
+    }
+
+}
