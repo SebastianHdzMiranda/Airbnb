@@ -314,17 +314,20 @@ a {
 }
 
 .vive .vive__grid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(4, 1fr);
+  overflow-y: hidden;
   overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  display: grid;
+  grid-template-columns: repeat(4, 76vw);
+  gap: 2rem;
+}
+.vive .vive__grid > * {
+  scroll-snap-align: center;
 }
 @media (min-width: 768px) {
   .vive .vive__grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(2, 1fr);
-    overflow-x: auto;
+    grid-template-columns: repeat(4, 42vw);
   }
 }
 @media (min-width: 1024px) {
@@ -332,14 +335,7 @@ a {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(4, 1fr);
-  }
-}
-.vive .vive__imgncontainer {
-  width: 85vw;
-}
-@media (min-width: 768px) {
-  .vive .vive__imgncontainer {
-    width: unset;
+    overflow-x: auto;
   }
 }
 .vive .vive__imagen {
