@@ -350,7 +350,7 @@ a {
   }
 }
 @media (min-width: 768px) {
-  .animate .animate__contenido {
+  .animate__contenido {
     background-image: linear-gradient(to left, transparent 10%, transparent 45%, #000 54%, #000 -160%), url(../img/anfitrion.jpg);
     color: #FFFFFF;
     padding: 11rem 0;
@@ -360,24 +360,24 @@ a {
   }
 }
 @media (min-width: 1024px) {
-  .animate .animate__contenido {
+  .animate__contenido {
     background-image: linear-gradient(to left, transparent 10%, transparent 25%, #000 45%, #000 -160%), url(../img/anfitrion.jpg);
     padding: 15rem 0;
     background-position: 0px, 231px -52px;
     background-size: 88%;
   }
 }
-.animate .animate__heading {
+.animate__heading {
   padding-left: 5%;
   width: 45%;
 }
-.animate .animate__text {
+.animate__text {
   color: #FFFFFF;
   width: 45%;
   padding-left: 5%;
   line-height: 1.2;
 }
-.animate .animate__link {
+.animate__link {
   background-color: #FFFFFF;
   padding: 2rem 4rem;
   color: #000;
@@ -392,7 +392,7 @@ a {
   border-radius: 10px;
 }
 @media (min-width: 768px) {
-  .animate .animate__link {
+  .animate__link {
     display: inline-block;
   }
 }

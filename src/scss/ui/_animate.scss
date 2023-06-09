@@ -6,7 +6,7 @@
     @include m.tablet{
         display: block;
     }
-    .animate__contenido{
+    &__contenido{
         @include m.tablet{
             background-image: linear-gradient(to left, transparent 10%, transparent 45%, #000 54%, #000 -160%), url(../img/anfitrion.jpg);
             color: v.$blanco;
@@ -24,17 +24,17 @@
         }
 
     }
-    .animate__heading{
+    &__heading{
         padding-left: 5%;
         width: 45%;
     }
-    .animate__text{
+    &__text{
         color: v.$blanco;
         width: 45%;
         padding-left: 5%;
         line-height: 1.2;
     }
-    .animate__link{
+    &__link{
         @include m.boton(v.$blanco, v.$negro);
         display: inline-block;
         margin-left: 5%;
