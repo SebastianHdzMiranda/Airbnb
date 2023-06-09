@@ -1,0 +1,35 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+.vive{
+    .vive__imagenes{
+
+    }
+    .vive__grid{
+        @include m.grid(4, 2rem);
+        overflow-x: scroll;
+        @include m.tablet{ 
+            @include m.grid(2, 2rem);
+            overflow-x: auto;
+        }
+        @include m.desktop{ 
+            @include m.grid(4, 2rem);
+        }
+    }
+    .vive__container{
+
+    }
+    .vive__imgncontainer{
+        width: 85vw;
+        @include m.tablet{ 
+            width: unset;
+        }
+    }
+    .vive__imagen{
+        border-radius: 1.5rem;
+    }
+    .vive__text{
+
+    }
+
+}

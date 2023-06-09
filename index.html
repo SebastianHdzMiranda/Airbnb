@@ -16,76 +16,78 @@
 <body>
     <header class="header">
         <div class="contenedor">
-            <div class="header__topbar">
+            <div class="topbar">
 
-                <h1 class="header__logo">Viaje</h1>
+                <h1 class="topbar__logo">Viaje</h1>
                 
-                <div class="header__nav">
+                <nav class="topbar__nav">
                     
-                    <a class="header__link href="#">Lugares para hospedarte</a>
-                    <a class="header__link href="#">Experiencias</a>
-                    <a class="header__link href="#">Experiencias en línea</a>
+                    <a class="topbar__link" href="#">Lugares para hospedarte</a>
+                    <a class="topbar__link" href="#">Experiencias</a>
+                    <a class="topbar__link" href="#">Experiencias en línea</a>
                     
-                </div>
+                </nav>
 
-                <a class="header__lastLink" href="#">Hazte Anfitrión</a>
+                <nav class="topbar__lastLinkContainer">
+                    <a class="topbar__lastLink" href="#">Hazte Anfitrión</a>
+                </nav>
                 
             </div>
-    
-            <div class="header__contenido">
-                <div class="formContainer">
-                    <form class="form" action="#">
+            
+            <div class="formContainer contenedor">
+                <form class="form" action="#">
+                    
+                    <div class="form__campos">
+
+                        <div class="form__campo">
+                            <label class="form__label" for="ubicacion">Ubicación</label>
+                            <input class="form__input" id="ubicacion" type="text" placeholder="¿A donde viajas">
+                        </div><!-- formSeccion -->
+
+                        <div class="form__campo">
+                            <label class="form__label" for="llegada">Llegada</label>
+                            <input class="form__input" id="llegada" type="date">
+                        </div><!-- formSeccion -->
                         
-                        <div class="form__seccciones">
-    
-                            <div class="form__seccion">
-                                <label class="form__label" for="ubicacion">Ubicación</label>
-                                <input class="form__input" id="ubicacion" type="text" placeholder="¿A donde viajas">
-                            </div><!-- formSeccion -->
-    
-                            <div class="form__seccion">
-                                <label class="form__label" for="llegada">Llegada</label>
-                                <input class="form__input" id="llegada" type="date">
-                            </div><!-- formSeccion -->
-                            
-                            <div class="form__seccion">
-                                <label class="form__label" for="salida">Salida</label>
-                                <input class="form__input" id="salida" type="date">
-                            </div><!-- formSeccion -->
-                            
-                            <div class="form__seccion">
-                                <label class="form__label" for="huespedes">Huéspedes</label>
-                                <input class="form__input" id="huespedes" type="number" placeholder="¿Cuantos?">
-                            </div><!-- formSeccion -->
-    
-                        </div><!-- formSecciones -->
-    
-                        <div class="form__btnContainer">
-                            <input class="form__btn" type="submit" value="Buscar">
-                        </div>
-                    </form>
-                </div>
-    
+                        <div class="form__campo">
+                            <label class="form__label" for="salida">Salida</label>
+                            <input class="form__input" id="salida" type="date">
+                        </div><!-- formSeccion -->
+                        
+                        <div class="form__campo">
+                            <label class="form__label" for="huespedes">Huéspedes</label>
+                            <input class="form__input" id="huespedes" type="number" placeholder="¿Cuantos?">
+                        </div><!-- formSeccion -->
+
+                    </div><!-- formSecciones -->
+
+                    <div class="form__btnContainer">
+                        <input class="form__btn" type="submit" value="Buscar">
+                    </div>
+                </form>
+            </div>
+
+            <div class="header__busqueda">
                 <p class="header__headline">¿No sabes a donde ir?</p>            
-                
                 <a class="header__btn" href="#">Búsqueda Flexible</a>
             </div>
+            
         </div>
     </header>
 
-    <div class="destinos contenedor seccion">
+    <section class="destinos contenedor seccion">
         <h2 class="destinos__heading">Descubre alojamientos populares</h2>
 
-        <div class="destinos__grid">
+        <ul class="destinos__grid">
 
-            <div class="destino">
+            <li class="destino">
                 <div class="destino__imgContainer">
 
                     <picture>
                         <source srcset="build/img/icono_destino_1.avif" type="image/avif">
                         <source srcset="build/img/icono_destino_1.webp" type="image/webp">
                         <source srcset="build/img/icono_destino_1.png" type="image/jpg">
-                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_1.png" width="500" height="300" alt="sitio">
+                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_1.png" width="500" height="300" alt="Img New York">
                     </picture>
 
                 </div>
@@ -95,16 +97,16 @@
                         4 horas en avión
                     </p>
                 </div>
-            </div><!-- sitio -->
+            </li><!-- sitio -->
 
-            <div class="destino">
+            <li class="destino">
                 <div class="destino__imgContainer">
 
                     <picture>
                         <source srcset="build/img/icono_destino_2.avif" type="image/avif">
                         <source srcset="build/img/icono_destino_2.webp" type="image/webp">
                         <source srcset="build/img/icono_destino_2.png" type="image/jpg">
-                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_2.png" width="500" height="300" alt="sitio">
+                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_2.png" width="500" height="300" alt="Img Paris">
                     </picture>
 
                 </div>
@@ -114,16 +116,16 @@
                         4 horas en avión
                     </p>
                 </div>
-            </div><!-- sitio -->
+            </li><!-- sitio -->
 
-            <div class="destino">
+            <li class="destino">
                 <div class="destino__imgContainer">
 
                     <picture>
                         <source srcset="build/img/icono_destino_3.avif" type="image/avif">
                         <source srcset="build/img/icono_destino_3.webp" type="image/webp">
                         <source srcset="build/img/icono_destino_3.png" type="image/jpg">
-                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_3.png" width="500" height="300" alt="sitio">
+                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_3.png" width="500" height="300" alt="Ims San Francisco">
                     </picture>
 
                 </div>
@@ -133,16 +135,16 @@
                         4 horas en avión
                     </p>
                 </div>
-            </div><!-- sitio -->
+            </li><!-- sitio -->
 
-            <div class="destino">
+            <li class="destino">
                 <div class="destino__imgContainer">
 
                     <picture>
                         <source srcset="build/img/icono_destino_4.avif" type="image/avif">
                         <source srcset="build/img/icono_destino_4.webp" type="image/webp">
                         <source srcset="build/img/icono_destino_4.png" type="image/jpg">
-                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_4.png" width="500" height="300" alt="sitio">
+                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_4.png" width="500" height="300" alt="Img Egipto">
                     </picture>
 
                 </div>
@@ -152,16 +154,16 @@
                         4 horas en avión
                     </p>
                 </div>
-            </div><!-- sitio -->
+            </li><!-- sitio -->
 
-            <div class="destino">
+            <li class="destino">
                 <div class="destino__imgContainer">
 
                     <picture>
                         <source srcset="build/img/icono_destino_5.avif" type="image/avif">
                         <source srcset="build/img/icono_destino_5.webp" type="image/webp">
                         <source srcset="build/img/icono_destino_5.png" type="image/jpg">
-                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_5.png" width="500" height="300" alt="sitio">
+                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_5.png" width="500" height="300" alt="Img Londres">
                     </picture>
 
                 </div>
@@ -171,16 +173,16 @@
                         4 horas en avión
                     </p>
                 </div>
-            </div><!-- sitio -->
+            </li><!-- sitio -->
 
-            <div class="destino">
+            <li class="destino">
                 <div class="destino__imgContainer">
 
                     <picture>
                         <source srcset="build/img/icono_destino_6.avif" type="image/avif">
                         <source srcset="build/img/icono_destino_6.webp" type="image/webp">
                         <source srcset="build/img/icono_destino_6.png" type="image/jpg">
-                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_6.png" width="500" height="300" alt="sitio">
+                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_6.png" width="500" height="300" alt="Img Italia">
                     </picture>
 
                 </div>
@@ -190,16 +192,16 @@
                         4 horas en avión
                     </p>
                 </div>
-            </div><!-- sitio -->
+            </li><!-- sitio -->
 
-            <div class="destino">
+            <li class="destino">
                 <div class="destino__imgContainer">
 
                     <picture>
                         <source srcset="build/img/icono_destino_7.avif" type="image/avif">
                         <source srcset="build/img/icono_destino_7.webp" type="image/webp">
                         <source srcset="build/img/icono_destino_7.png" type="image/jpg">
-                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_7.png" width="500" height="300" alt="sitio">
+                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_7.png" width="500" height="300" alt="Img India">
                     </picture>
 
                 </div>
@@ -209,16 +211,16 @@
                         4 horas en avión
                     </p>
                 </div>
-            </div><!-- sitio -->
+            </li><!-- sitio -->
 
-            <div class="destino">
+            <li class="destino">
                 <div class="destino__imgContainer">
                     
                     <picture>
                         <source srcset="build/img/icono_destino_8.avif" type="image/avif">
                         <source srcset="build/img/icono_destino_8.webp" type="image/webp">
                         <source srcset="build/img/icono_destino_8.png" type="image/jpg">
-                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_8.png" width="500" height="300" alt="sitio">
+                        <img class="destino__img" loading="lazy" src="build/img/icono_destino_8.png" width="500" height="300" alt="Img Grecia">
                     </picture>
 
                 </div>
@@ -228,8 +230,63 @@
                         4 horas en avión
                     </p>
                 </div>
-            </div><!-- sitio -->
+            </li><!-- sitio -->
+        </ul>
+    </section>
+
+    <section class="vive contenedor">
+        <h2 class="vive__heading">Vive en cualquier lugar del mundo</h2>
+        <div class="vive__grid">
+            
+            <div class="vive__container">
+                <div class="vive__imgncontainer">
+                    <picture>
+                        <source srcset="build/img/vive_1.avif" type="image/avif">
+                        <source srcset="build/img/vive_1.webp" type="image/webp">
+                        <source srcset="build/img/vive_1.jpg" type="image/jpg">
+                        <img class="vive__imagen" loading="lazy" src="build/img/vive_1.jpg" width="500" height="300" alt="vive 1">
+                    </picture>
+                </div>
+                <p class="vive__text">Escapadas al aire libre</p>
+            </div> <!-- container -->
+            
+            <div class="vive__container">
+                <div class="vive__imgncontainer">
+                    <picture>
+                        <source srcset="build/img/vive_2.avif" type="image/avif">
+                        <source srcset="build/img/vive_2.webp" type="image/webp">
+                        <source srcset="build/img/vive_2.jpg" type="image/jpg">
+                        <img class="vive__imagen" loading="lazy" src="build/img/vive_2.jpg" width="500" height="300" alt="vive 2">
+                    </picture>
+                </div>
+                <p class="vive__text">Alojamientos únicos</p>
+            </div> <!-- container -->
+            
+            <div class="vive__container">
+                <div class="vive__imgncontainer">
+                    <picture>
+                        <source srcset="build/img/vive_3.avif" type="image/avif">
+                        <source srcset="build/img/vive_3.webp" type="image/webp">
+                        <source srcset="build/img/vive_3.jpg" type="image/jpg">
+                        <img class="vive__imagen" loading="lazy" src="build/img/vive_3.jpg" width="500" height="300" alt="vive 3">
+                    </picture>
+                </div>
+                <p class="vive__text">Alojamientos enteros</p>
+            </div> <!-- container -->
+            
+            <div class="vive__container">
+                <div class="vive__imgncontainer">
+                    <picture>
+                        <source srcset="build/img/vive_4.avif" type="image/avif">
+                        <source srcset="build/img/vive_4.webp" type="image/webp">
+                        <source srcset="build/img/vive_4.jpg" type="image/jpg">
+                        <img class="vive__imagen" loading="lazy" src="build/img/vive_4.jpg" width="500" height="300" alt="vive 4">
+                    </picture>
+                </div>
+                <p class="vive__text">Con tu mascota</p>
+            </div> <!-- container -->
+
         </div>
-    </div>
+    </section>
 </body>
 </html>

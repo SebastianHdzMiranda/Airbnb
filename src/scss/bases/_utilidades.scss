@@ -1,0 +1,23 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+/* Utilidades
+------------------------------------------------------------ */
+.contenedor {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+    @include m.tablet {
+        width: 95%;
+    }
+}
+.seccion {
+    padding: 2rem 0;
+}
+[class$="__heading"] {
+    margin: 2rem 0;
+    font-size: 2.8rem;
+    @include m.telefono{ 
+        font-size: 3.2rem;
+    }
+}

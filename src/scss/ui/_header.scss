@@ -14,27 +14,9 @@
     @include m.tablet{ 
         padding: 2rem 0 20rem 0;
     }
-    &__topbar{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    &__busqueda{
+        text-align: center;
     }
-    &__nav{
-        display: none;
-        gap: 4rem;
-        @include m.tablet{ 
-            display: flex;
-        }
-    }
-    &__lastLink{
-        color: v.$blanco;
-        text-decoration: underline;
-    }
-    &__contenido{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }   
     &__headline{
         color: v.$blanco;
         font-size: 2.5rem;
@@ -42,7 +24,29 @@
     }
     &__btn{
         @include m.boton(v.$blanco, v.$primario);
+        display: inline-block;
     }
+}
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__nav{
+        display: none;
+        @include m.tablet{ 
+            display: flex;
+            gap: 2rem;
+        }
+        @include m.desktop{ 
+            gap: 4rem;
+        }
+    }
+    &__link, &__lastLink{
+        color: v.$blanco;
+    }
+    &__lastLink{
+        text-decoration: underline;
+    }       
 }
 .formContainer{
     width: 100%;
@@ -60,29 +64,38 @@
 }
 .form{
     background-color: v.$blanco;
+    // box-shadow: 0px 0px 8px 1px rgba(255,255,255,1);
     border-radius: 5rem;
     padding: 4rem 2rem;
     @include m.tablet{ 
         display: flex;
         align-items: center;
-        padding: 1rem 2rem;
+        padding: 0;
     }
-    &__seccciones{
+    &__campos{
+        padding: 0 1rem;
         @include m.tablet{ 
             display: flex;
             justify-content: space-around;
             width: 85%;
             align-items: center;
             gap: 2rem;
-            padding: 0 1rem;
         }
     }
-    &__seccion{
+    &__campo{
         border-radius: 2rem;
         margin-bottom: 2rem;
         @include m.tablet{ 
             flex: 1;
             margin-bottom: 0;
+            padding: 1rem 0;
+
+        }
+        &:first-child{
+
+            @include m.tablet{ 
+                padding-left: 3rem;
+            }
         }
     }
     &__label{
@@ -104,6 +117,7 @@
     &__btnContainer{
         @include m.tablet{ 
             width: 15%;
+            padding: 1rem;
         }
     }
     &__btn{
@@ -114,6 +128,7 @@
         font-size: 1.2rem;
         cursor: pointer;
         text-transform: uppercase;
+        background-image: radial-gradient(circle, lighten(v.$secundario, 10%) 10%, darken(v.$secundario, 5%) 100%);
         @include m.tablet{ 
             margin: 0;
         }

@@ -1,6 +1,8 @@
 @use 'variables' as v; 
 @use 'mixins' as m; 
 
+/* Globales
+------------------------------------------------------------ */
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -29,15 +31,4 @@ ul {
     padding: 0;
     list-style: none;
     margin: 0;
-}
-.contenedor {
-    width: 90%;
-    max-width: 120rem;
-    margin: 0 auto;
-    @include m.tablet {
-        width: 95%;
-    }
-}
-.seccion {
-    padding: 2rem 0;
 }

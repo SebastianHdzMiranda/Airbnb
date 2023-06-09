@@ -2,21 +2,12 @@
 @use 'bases/mixins' as m;
 
 
-/* Header
+/* Alojaientos
 ------------------------------------------------------------ */
 .destinos{
-    &__heading{
-        padding: 2rem 0;
-        font-size: 2.8rem;
-        @include m.telefono{ 
-            font-size: 3.2rem;
-        }
-    }
     &__grid{
         @include m.grid(2, 2rem);
         align-items: center;
-        // @include m.tablet{ 
-        // }
         @include m.desktop{ 
             @include m.grid(4, 3rem);
             align-items: center;
@@ -33,19 +24,15 @@
         flex-direction: row;
     }
     &__imgContainer{
-        max-width: 12rem;
+        max-width: 12rem;  
     }
-    // &__img{
-
-    // }
-    // &__info{
-
-    // }
     &__pais{
         text-align: center;
         font-size: 2.2rem;
+        font-weight: 700;
         @include m.tablet{ 
             text-align: left;
+            font-size: 2.4rem;
         }
     }
     &__description{
