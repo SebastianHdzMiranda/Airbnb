@@ -2,7 +2,7 @@
 @use 'bases/mixins' as m;
 
 .vive{
-    .vive__grid{
+    &__grid{
         @include m.scroll;
         display: grid;
         grid-template-columns: repeat(4, 76vw);
@@ -16,7 +16,7 @@
             overflow-x: auto;
         }
     }
-    .vive__imagen{
+    &__imagen{
         border-radius: 1.5rem;
     }
 }

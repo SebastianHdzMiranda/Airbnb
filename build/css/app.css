@@ -313,7 +313,7 @@ a {
   }
 }
 
-.vive .vive__grid {
+.vive__grid {
   overflow-y: hidden;
   overflow-x: scroll;
   -ms-scroll-snap-type: x mandatory;
@@ -322,23 +322,23 @@ a {
   grid-template-columns: repeat(4, 76vw);
   gap: 2rem;
 }
-.vive .vive__grid > * {
+.vive__grid > * {
   scroll-snap-align: center;
 }
 @media (min-width: 768px) {
-  .vive .vive__grid {
+  .vive__grid {
     grid-template-columns: repeat(4, 42vw);
   }
 }
 @media (min-width: 1024px) {
-  .vive .vive__grid {
+  .vive__grid {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(4, 1fr);
     overflow-x: auto;
   }
 }
-.vive .vive__imagen {
+.vive__imagen {
   border-radius: 1.5rem;
 }
 /*# sourceMappingURL=app.css.map */
