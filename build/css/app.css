@@ -314,7 +314,6 @@ a {
 }
 
 .vive__grid {
-  overflow-y: hidden;
   overflow-x: scroll;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
@@ -340,5 +339,61 @@ a {
 }
 .vive__imagen {
   border-radius: 1.5rem;
+}
+
+.animate {
+  display: none;
+}
+@media (min-width: 768px) {
+  .animate {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .animate .animate__contenido {
+    background-image: linear-gradient(to left, transparent 10%, transparent 45%, #000 54%, #000 -160%), url(../img/anfitrion.jpg);
+    color: #FFFFFF;
+    padding: 11rem 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px, 100px -1px;
+  }
+}
+@media (min-width: 1024px) {
+  .animate .animate__contenido {
+    background-image: linear-gradient(to left, transparent 10%, transparent 25%, #000 45%, #000 -160%), url(../img/anfitrion.jpg);
+    padding: 15rem 0;
+    background-position: 0px, 231px -52px;
+    background-size: 88%;
+  }
+}
+.animate .animate__heading {
+  padding-left: 5%;
+  width: 45%;
+}
+.animate .animate__text {
+  color: #FFFFFF;
+  width: 45%;
+  padding-left: 5%;
+  line-height: 1.2;
+}
+.animate .animate__link {
+  background-color: #FFFFFF;
+  padding: 2rem 4rem;
+  color: #000;
+  margin-top: 1rem;
+  border-radius: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  display: block;
+  display: inline-block;
+  margin-left: 5%;
+  padding: 1.2rem 4rem;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .animate .animate__link {
+    display: inline-block;
+  }
 }
 /*# sourceMappingURL=app.css.map */
