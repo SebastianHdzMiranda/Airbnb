@@ -341,41 +341,53 @@ a {
   border-radius: 1.5rem;
 }
 
-.animate {
-  display: none;
-}
-@media (min-width: 768px) {
-  .animate {
-    display: block;
-  }
+.animate__contenido {
+  background-image: linear-gradient(to top, transparent 43%, #000 45%), url(../img/anfitrion.jpg);
+  color: #FFFFFF;
+  padding: 3rem;
+  background-repeat: no-repeat;
+  background-size: cover, max(57rem, 100%);
+  background-position: 0px, max(-18rem, 100%) 38rem;
+  height: 73rem;
 }
 @media (min-width: 768px) {
   .animate__contenido {
-    background-image: linear-gradient(to left, transparent 10%, transparent 45%, #000 54%, #000 -160%), url(../img/anfitrion.jpg);
-    color: #FFFFFF;
+    background-image: linear-gradient(to left, transparent 45%, #000 54%), url(../img/anfitrion.jpg);
     padding: 11rem 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0px, 100px -1px;
+    height: unset;
   }
 }
 @media (min-width: 1024px) {
   .animate__contenido {
-    background-image: linear-gradient(to left, transparent 10%, transparent 25%, #000 45%, #000 -160%), url(../img/anfitrion.jpg);
+    background-image: linear-gradient(to left, transparent 31%, rgb(0, 0, 0) 40%), url(../img/anfitrion.jpg);
     padding: 15rem 0;
-    background-position: 0px, 231px -52px;
+    background-position: 0px, min(325px, 197%) -45px;
     background-size: 88%;
+    background-size: max(80%, 85rem);
   }
 }
 .animate__heading {
-  padding-left: 5%;
-  width: 45%;
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .animate__heading {
+    padding-left: 5%;
+    width: 45%;
+    font-size: 2.8rem;
+  }
 }
 .animate__text {
   color: #FFFFFF;
-  width: 45%;
-  padding-left: 5%;
-  line-height: 1.2;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  .animate__text {
+    width: 50%;
+    padding-left: 5%;
+  }
 }
 .animate__link {
   background-color: #FFFFFF;
@@ -387,13 +399,18 @@ a {
   font-weight: 700;
   display: block;
   display: inline-block;
-  margin-left: 5%;
   padding: 1.2rem 4rem;
   border-radius: 10px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .animate__link {
     display: inline-block;
+  }
+}
+@media (min-width: 768px) {
+  .animate__link {
+    margin-left: 5%;
   }
 }
 /*# sourceMappingURL=app.css.map */

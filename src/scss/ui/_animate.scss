@@ -2,43 +2,59 @@
 @use 'bases/mixins' as m;
 
 .animate{
-    display: none;
-    @include m.tablet{
-        display: block;
-    }
     &__contenido{
+        background-image: linear-gradient(to top, transparent 43%, #000 45%), url(../img/anfitrion.jpg);
+        color: v.$blanco;
+        padding: 3rem;
+        background-repeat: no-repeat;
+        background-size: cover, max(57rem, 100%);
+        background-position: 0px,max(-18rem, 100%) 38rem;
+        height: 73rem;
+        // border-radius: 20px;
+
         @include m.tablet{
-            background-image: linear-gradient(to left, transparent 10%, transparent 45%, #000 54%, #000 -160%), url(../img/anfitrion.jpg);
-            color: v.$blanco;
+            background-image: linear-gradient(to left, transparent 45%, #000 54%), url(../img/anfitrion.jpg);
             padding: 11rem 0;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 0px, 100px -1px;
+            height: unset;
         }
 
         @include m.desktop{
-            background-image: linear-gradient(to left, transparent 10%, transparent 25%, #000 45%, #000 -160%), url(../img/anfitrion.jpg);
+            background-image: linear-gradient(to left, transparent 31%, rgb(0, 0, 0) 40% ), url(../img/anfitrion.jpg);
             padding: 15rem 0;
-            background-position: 0px, 231px -52px;
+            background-position: 0px, min(325px,197%) -45px;
             background-size: 88%;
+            background-size: max(80%,85rem);
         }
 
     }
     &__heading{
-        padding-left: 5%;
-        width: 45%;
+        font-size: 2.5rem;
+        @include m.tablet{
+            padding-left: 5%;
+            width: 45%;
+            font-size: 2.8rem;
+        }
     }
     &__text{
         color: v.$blanco;
-        width: 45%;
-        padding-left: 5%;
-        line-height: 1.2;
+        line-height: 1.5;
+        @include m.tablet{
+            width: 50%;
+            padding-left: 5%;
+        }
     }
     &__link{
         @include m.boton(v.$blanco, v.$negro);
         display: inline-block;
-        margin-left: 5%;
         padding: 1.2rem 4rem;
         border-radius: 10px;
+        text-align: center;
+        @include m.tablet{
+            margin-left: 5%;
+
+        }
     }
 }
