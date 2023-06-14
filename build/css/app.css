@@ -344,7 +344,7 @@ a {
 .animate__contenido {
   background-image: linear-gradient(to top, transparent 43%, #000 45%), url(../img/anfitrion.jpg);
   color: #FFFFFF;
-  padding: 3rem;
+  padding: 4rem 3rem;
   background-repeat: no-repeat;
   background-size: cover, max(57rem, 100%);
   background-position: 0px, max(-18rem, 100%) 38rem;
@@ -411,5 +411,39 @@ a {
   .animate__link {
     margin-left: 5%;
   }
+}
+
+.experiencias__grid {
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  display: grid;
+  grid-template-columns: repeat(3, 76vw);
+  gap: 2rem;
+}
+.experiencias__grid > * {
+  scroll-snap-align: center;
+}
+@media (min-width: 768px) {
+  .experiencias__grid {
+    grid-template-columns: repeat(3, 42vw);
+  }
+}
+@media (min-width: 1024px) {
+  .experiencias__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    overflow-x: auto;
+  }
+}
+.experiencias__imagen {
+  border-radius: 1.5rem;
+}
+.experiencias__titulo {
+  margin-top: 1.5rem;
+}
+.experiencias__text {
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=app.css.map */

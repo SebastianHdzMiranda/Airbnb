@@ -1,0 +1,29 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+.experiencias{
+    &__grid{
+        @include m.scroll;
+        display: grid;
+        grid-template-columns: repeat(3, 76vw);
+        gap: 2rem;
+
+        @include m.tablet{ 
+            grid-template-columns: repeat(3, 42vw);
+        }
+        @include m.desktop{ 
+            @include m.grid(3, 2rem);
+            overflow-x: auto;
+        }
+    }
+    &__imagen{
+        border-radius: 1.5rem;
+    }
+    &__titulo{
+        margin-top: 1.5rem;
+    }
+    &__text{
+        margin-top: 1rem;
+    }
+
+}

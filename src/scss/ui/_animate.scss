@@ -5,12 +5,11 @@
     &__contenido{
         background-image: linear-gradient(to top, transparent 43%, #000 45%), url(../img/anfitrion.jpg);
         color: v.$blanco;
-        padding: 3rem;
+        padding: 4rem 3rem;
         background-repeat: no-repeat;
         background-size: cover, max(57rem, 100%);
         background-position: 0px,max(-18rem, 100%) 38rem;
         height: 73rem;
-        // border-radius: 20px;
 
         @include m.tablet{
             background-image: linear-gradient(to left, transparent 45%, #000 54%), url(../img/anfitrion.jpg);
