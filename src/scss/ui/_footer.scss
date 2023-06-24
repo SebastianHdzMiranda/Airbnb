@@ -2,45 +2,33 @@
 @use 'bases/mixins' as m;
 
 .footer{
-    background-color: #efefef;
-    border-top: 1px solid  #e1e1e1;
+    background-color: lighten( v.$grisClaro, 8%);
+    border-top: 1px solid  lighten( v.$gris, 40%);
     padding-top: 2rem;
-    &__contenido{
-
-    }
     &__grid{
         @include m.tablet{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
+            @include m.grid(2, 2rem);
         }
         @include m.desktop{
             grid-template-columns: repeat(4, 1fr);
         }
     }
-    &__seccion{
+    &__widget{
         border-bottom: 1px solid #e1e1e1;
         padding: 2rem 0;
     }
-    &__info{
+    &__heading{
         margin-bottom: 1rem;
         font-weight: 700;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         text-transform: uppercase;
-    }
-    &__nav{
-
-    }
-    &__list{
-
     }
     &__item{
         line-height: 2;
     }
     &__enlace{
-        color: v.$gris;
         color: v.$negro;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 
 }
@@ -61,22 +49,18 @@
         }
     }
     &__texto{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         @include m.tablet{
             margin-bottom: 0;
             margin-top: 0.1rem;
             margin-right: 1rem;
         }
     }
-    &__nav{
-    }
     &__list{
         display: flex;
         flex-wrap: wrap;
         column-gap: 2rem;
         row-gap: 1rem;
-    }
-    &__item{
     }
     &__enlace{
         color: v.$negro;

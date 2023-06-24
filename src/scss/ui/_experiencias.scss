@@ -2,7 +2,7 @@
 @use 'bases/mixins' as m;
 
 .experiencias{
-    &__grid{
+    &__listado{
         @include m.scroll;
         display: grid;
         grid-template-columns: repeat(3, 76vw);
@@ -16,6 +16,9 @@
             overflow-x: auto;
         }
     }
+    
+}
+.experiencia{
     &__imagen{
         border-radius: 1.5rem;
     }
@@ -25,5 +28,4 @@
     &__text{
         margin-top: 1rem;
     }
-
 }

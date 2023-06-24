@@ -377,6 +377,12 @@ a {
     padding-left: 5%;
     width: 45%;
     font-size: 2.8rem;
+    margin-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .animate__heading {
+    font-size: 3.2rem;
   }
 }
 .animate__text {
@@ -413,7 +419,7 @@ a {
   }
 }
 
-.experiencias__grid {
+.experiencias__listado {
   overflow-x: scroll;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
@@ -421,42 +427,43 @@ a {
   grid-template-columns: repeat(3, 76vw);
   gap: 2rem;
 }
-.experiencias__grid > * {
+.experiencias__listado > * {
   scroll-snap-align: center;
 }
 @media (min-width: 768px) {
-  .experiencias__grid {
+  .experiencias__listado {
     grid-template-columns: repeat(3, 42vw);
   }
 }
 @media (min-width: 1024px) {
-  .experiencias__grid {
+  .experiencias__listado {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
     overflow-x: auto;
   }
 }
-.experiencias__imagen {
+
+.experiencia__imagen {
   border-radius: 1.5rem;
 }
-.experiencias__titulo {
+.experiencia__titulo {
   margin-top: 1.5rem;
 }
-.experiencias__text {
+.experiencia__text {
   margin-top: 1rem;
 }
 
 .footer {
-  background-color: #efefef;
-  border-top: 1px solid #e1e1e1;
+  background-color: whitesmoke;
+  border-top: 1px solid #cecece;
   padding-top: 2rem;
 }
 @media (min-width: 768px) {
   .footer__grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 1024px) {
@@ -464,23 +471,22 @@ a {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-.footer__seccion {
+.footer__widget {
   border-bottom: 1px solid #e1e1e1;
   padding: 2rem 0;
 }
-.footer__info {
+.footer__heading {
   margin-bottom: 1rem;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
 }
 .footer__item {
   line-height: 2;
 }
 .footer__enlace {
-  color: #686868;
   color: #000;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .copyright {
@@ -503,7 +509,7 @@ a {
   }
 }
 .copyright__texto {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 @media (min-width: 768px) {
   .copyright__texto {
